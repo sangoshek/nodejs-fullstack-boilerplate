@@ -1,8 +1,15 @@
 import { FC } from 'react';
+import {
+    Stack,
+    Paper,
+    Typography
+} from '@mui/material';
 
 const Login: FC = () => {
     return (
-        <h1>Login Page</h1>
+        <Paper elevation={3}>
+            <Typography variant="body1" component="div">Login Page</Typography>
+        </Paper>
     );
 };
 
