@@ -1,4 +1,5 @@
 import React, { FC, ReactNode } from "react";
+import Header from '../Header/Header';
 
 type LayoutProps = {
     children: ReactNode;
@@ -6,10 +7,12 @@ type LayoutProps = {
 
 const LayoutMain: FC<LayoutProps> = (props:LayoutProps) => {
     return (
-        <main>
-            <h1>layout</h1>
-            {props.children}
-        </main>
+        <>
+            <Header title="My project"/>
+            <main>            
+                {props.children}
+            </main>
+        </>        
     );
 };
 
