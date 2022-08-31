@@ -1,7 +1,7 @@
 {
-  "name": "magic-match-frontend",
+  "name": "nodejs-fullstack-boilerplate",
   "version": "0.0.1",
-  "description": "",
+  "description": "This is a nodejs fullstack project boilerplate, tech stack includes nestjs and nextjs to serve a web application with integrated frontend to backend services.",
   "author": "",
   "private": true,
   "license": "UNLICENSED",
