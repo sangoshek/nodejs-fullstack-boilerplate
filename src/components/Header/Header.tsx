@@ -6,8 +6,8 @@ import {
 } from '@mui/material';
 
 type HeaderProps = {
-    logoSrc?: String;
-    title: String
+    logoSrc?: string;
+    title: string
     children?: ReactNode;
   };
 
