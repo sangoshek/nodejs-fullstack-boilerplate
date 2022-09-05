@@ -7,7 +7,6 @@
     "experimentalDecorators": true,
     "allowSyntheticDefaultImports": true,
     "target": "es2017",
-    "jsx": "preserve",
     "allowJs": true,
     "sourceMap": true,
     "outDir": "./dist",
