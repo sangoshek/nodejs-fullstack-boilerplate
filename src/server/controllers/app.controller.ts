@@ -9,7 +9,11 @@ export class AppController {
     @Render('index')
     home() {
         return {
-            title: 'index'
+            title: 'index',
+            users: {
+                name: 'John',
+                title: 'Mr.'
+            }
         };
     }
 }
