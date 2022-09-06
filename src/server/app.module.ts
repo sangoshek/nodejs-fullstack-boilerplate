@@ -1,6 +1,8 @@
 import { Module } from '@nestjs/common';
 import { RenderModule } from 'nest-next';
 import Next from 'next';
+import { TypeOrmModule } from '@nestjs/typeorm';
+import { User } from './models/user.entity';
 import { AppController } from './controllers/app.controller';
 import { LoginController } from './controllers/login.controller';
 import { AppService } from './services/app.service';
@@ -14,7 +16,17 @@ import { AppService } from './services/app.service';
             /* null means that nest-next 
                 should look for pages in root dir */
             { viewsDir: null }
-        )
+        ),
+        TypeOrmModule.forRoot({
+            type: 'mysql',
+            host: 'localhost',
+            port: 3306,
+            username: 'root',
+            password: '',
+            database: 'nest_test',
+            entities: [User],
+            synchronize: process.env.NODE_ENV !== 'production',
+          }),
     ],
     controllers: [
         AppController,
