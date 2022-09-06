@@ -1,9 +1,16 @@
-import { FC } from 'react';
+import { NextPage } from 'next';
+import {PageProps, PageContext} from 'src/types/page';
 
-const Home: FC = () => {
+const Home: NextPage<PageProps> = ({title}) => {
     return (
-        <h1>Testing</h1>
+        <h1>{title}</h1>
     );
+};
+
+Home.getInitialProps = (ctx: PageContext) => {
+    return {
+        title: ctx.query.title,
+    };
 };
 
 export default Home;

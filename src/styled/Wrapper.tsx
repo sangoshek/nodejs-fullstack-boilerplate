@@ -6,6 +6,7 @@ const ContentWrapperMaxWidth = styled.div`
 `
 
 const ContentBodyWrapper = styled.div`
+    margin-top: 80px;
     min-height: calc(100vh - 80px - 50px);
 `
 

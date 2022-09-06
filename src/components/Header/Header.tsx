@@ -13,7 +13,7 @@ type HeaderProps = {
 
 const Header: FC<HeaderProps> = (props:HeaderProps) => {
     return (
-        <StyledHeader component="nav">
+        <StyledHeader component="div">
             <ContentWrapperMaxWidth>
                 <Typography variant="h4" component="span">{props.title}</Typography>
             </ContentWrapperMaxWidth>
