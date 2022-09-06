@@ -1,5 +1,7 @@
 import React, { FC, ReactNode } from "react";
-import Header from '../Header/Header';
+import Header from 'src/components/Header/Header';
+import Footer from 'src/components/Footer/Footer';
+import { ContentBodyWrapper } from 'src/styled/Wrapper';
 
 type LayoutProps = {
     children: ReactNode;
@@ -9,9 +11,10 @@ const LayoutMain: FC<LayoutProps> = (props:LayoutProps) => {
     return (
         <>
             <Header title="My project"/>
-            <main>            
+            <ContentBodyWrapper>            
                 {props.children}
-            </main>
+            </ContentBodyWrapper>
+            <Footer copyright="2022(c)sangoshek.com. All right reserved." />
         </>        
     );
 };

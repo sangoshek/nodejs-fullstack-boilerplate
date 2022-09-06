@@ -5,6 +5,11 @@ const ContentWrapperMaxWidth = styled.div`
     padding: 0 1rem;
 `
 
+const ContentBodyWrapper = styled.div`
+    min-height: calc(100vh - 80px - 50px);
+`
+
 export {
-    ContentWrapperMaxWidth
+    ContentWrapperMaxWidth,
+    ContentBodyWrapper
 }
