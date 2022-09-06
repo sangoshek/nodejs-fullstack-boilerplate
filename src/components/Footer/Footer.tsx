@@ -12,7 +12,11 @@ type FooterProps = {
 
 const Footer: FC<FooterProps> = (props:FooterProps) => {
     return (
-        <StyledFooter component="nav">
+        <StyledFooter
+            direction="row"
+            justifyContent="center"
+            alignItems="center"
+            >
             <ContentWrapperMaxWidth>
                 <Typography variant="body1" component="span">{props.copyright}</Typography>
             </ContentWrapperMaxWidth>
