@@ -39,10 +39,10 @@ jobs:
     
     steps:
       - name: Login remote server
-        uses: appleboy/ssh-action@master
+        uses: garygrossgarten/github-action-ssh@release
         with:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
-          script: whoami       
+          command: whoami       
