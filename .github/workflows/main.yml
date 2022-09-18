@@ -35,7 +35,7 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
   deploy:
-    runs-on: appleboy/ssh-action@v0.1.5
+    runs-on: ubuntu-latest
     
     steps:
       - name: Login remote server
